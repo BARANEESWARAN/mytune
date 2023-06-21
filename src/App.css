@@ -1,0 +1,499 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;500&display=swap');
+/* ===================
+variables
+=================== */
+
+  :root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+  }
+/* ===================
+Global style
+=================== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #252529;
+  color: #fff;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+nav ul  {
+padding: 0;
+margin: 0;
+}
+
+#showcase nav ul li {
+ 
+  list-style-type: none;
+}
+/* <-------Utilities css------> */
+.container{
+  width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 3rem;
+  width: 100%;
+ 
+}
+
+/* <---------navbar------> */
+nav{
+  height: 60px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+z-index: 3;
+  position: fixed;
+ 
+}
+nav li{
+  display: inline;
+  float: left;
+
+
+}
+nav li a{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 1.2rem 0;
+
+}
+.cf img{
+  float: left !important;
+  cursor: pointer;
+  width: 60px;
+  padding: 0.5rem ;
+ margin-left: 0.7rem;
+}
+
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+/* <---------showcase Content------> */
+#showcase{
+ margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_640.jpg")  no-repeat center/cover;
+position: relative;
+display: grid;
+grid-template-columns: 1fr;
+}
+/* .hide-on-small{
+  display: flex;
+  padding-left: 1rem;
+} */
+.section-main  {
+  width: 100%;
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+padding-top: 25vh;
+margin-bottom: 0;
+gap: 2rem;
+
+
+}
+.section-main h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  z-index: 2;
+ 
+}
+.section-main h2{
+  font-size: 2rem;
+  z-index: 2;
+}
+.section-main p{
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+#showcase .section-main{
+ height: 100vh;
+  position: relative;
+
+}
+#showcase .section-main::before{
+  content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6);
+
+    }
+
+    /* <-------music--------> */
+    #music .container{
+display: flex;
+width: 100%;
+margin-top: 2rem;
+justify-content: center;
+align-items:center;
+padding: 3rem 3rem;
+gap: 2rem;
+
+    }
+    #music .container h2{
+      font-size: 2.5rem;
+    }
+    #music .container h3{
+      font-size: 1.7rem;
+    }
+    #music .container .lead{
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .btn{
+      background-color: #e50914;
+width: 200px;
+padding: 1rem;
+border-radius: 3px;
+
+    }
+    #music .tab-img{
+width: 100%;
+height: 100%;
+  }
+  .music-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 3.5rem;
+  }
+
+  #video{
+    background-color: #f4f4f4;
+    color: #444;
+    width: 100%;
+padding-top: 10vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding-bottom: 2rem;
+   
+  }
+  #video .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+width: 100%;
+    gap: 3rem;
+  }
+  #video .container h3{
+font-size: 2rem;
+  }
+  #video .container p{
+    font-size: 1.2rem;
+   
+      }
+      #video .container img{
+width: 100%;
+      }
+      #video .container .btn{
+        background-color:#103063;
+       
+          }
+#entertainment{
+  width: 100%;
+  height: 80vh;
+
+  background: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg")  no-repeat center/cover;
+}
+#entertainment .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 2rem;
+  
+  
+}
+#entertainment .container h3{
+font-size: 2rem;
+}
+#entertainment .container p{
+  font-size: 1.3rem;
+  }
+
+
+  /* <-------------CArd--------> */
+  #card .container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-color);
+    color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+   gap: 1rem;
+    padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  }
+  #card .container img{
+    width: 100%;
+    height: 100%;
+      }
+  .card-right{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+  }
+  .card-right h3{
+    font-size: 1.4rem;
+  }
+  .redeem{
+    color:#103063;
+  }
+  hr{
+    background-color: #103063;
+    width: 100%;
+  }
+   footer{
+    padding: 1rem;
+    text-align: center;
+ 
+   }
+  @media screen and (max-width: 780px) {
+    .cf img{
+display: none;
+    }
+   
+    #showcase .section-main{
+      height: 100vh;
+       position: relative;
+     
+     }
+     #showcase .section-main::before{
+      height: 100%;
+     }
+    #music .container{
+gap:1rem;
+    }
+    .music-right{
+gap: 1rem;
+    }
+    /* #music .container .lead{
+      display: none;
+    } */
+    #music .container{
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+    }
+    #music .container h2{
+      font-size: 2rem;
+    }
+    #music .container h3{
+      font-size: 1.2rem;
+    }
+    #music .container .lead{
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .btn{
+      background-color: #e50914;
+width: 180px;
+padding: 0.5rem;
+border-radius: 3px;
+
+    }
+
+  #card .container{
+grid-template-columns: 1fr;
+  }
+
+  }
+@media screen and (max-width: 580px) {
+
+/* <---------navbar------> */
+  nav {
+    height: auto;
+    border-bottom: 0;
+ 
+  }
+  nav ul {
+    display: none;
+    height: auto;
+
+  }
+  nav .show {
+    display:block;
+    height: auto;
+
+  }
+  nav li {
+    width: 100%;
+    float: left;
+
+    line-height: 2;
+  }
+  nav li a{
+   
+    width: 100%;
+  }
+  nav a {
+    text-align: left !important;
+    width: 100%;
+    height: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+    padding: 7px 0;
+
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    /* margin: 10px ; */
+ display: inline-block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+    border-bottom: none;
+  }
+
+/* <---------showcase Content------> */
+#showcase{
+  height: 60vh;
+  width: 100%;
+}
+#showcase .section-main{
+  height: 60vh;
+   position: relative;
+ 
+ }
+ #showcase .section-main::before{
+  height: 100%;
+ }
+.section-main  .lead{
+display: none;
+}
+
+#music .container .lead{
+text-align: left;
+width:100%;
+}
+
+.section-main  {
+padding-top: 10vh;
+position: relative;
+}
+
+
+
+
+.section-main h1 {
+  font-size: 3rem;
+
+}
+.section-main h2{
+  font-size: 1.5rem;
+}
+
+#music .container{
+
+align-items: center;
+justify-content: center;
+gap: 2rem;
+padding-bottom: 10rem;
+/* position: relative;
+top: 36vh; */
+
+}
+
+#music .container h2,#music .container p{
+  text-align: left;
+}
+#music .container h3{
+  font-size: 1.2rem;
+}
+
+.music-right {
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+#video .container h3{
+  font-size: 1.5rem;
+  text-align: left;
+  }
+  #video .container p{
+    font-size: 1rem;
+    text-align: left;
+    }
+#entertainment .container h3{
+  font-size: 1.5rem;
+  text-align: left;
+  }
+  #entertainment .container p{
+    font-size: 1rem;
+    text-align: left;
+
+    
+    }
+#card .container{
+  flex-direction: column !important;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#card .container h3{
+  font-size: 1.5rem;
+  text-align: left;
+  }
+  #card .container p{
+    font-size: 1rem;
+    text-align: left;
+    }
+
+}
